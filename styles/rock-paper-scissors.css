@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(25, 25, 25);
   color: white;
@@ -87,6 +91,9 @@ body {
   border-bottom: 3px solid #FAC036;
   padding: 15px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .score span {
@@ -169,4 +176,343 @@ body {
 
 .show-reset-warning {
   background-color: rgb(52, 52, 52);
+}
+
+/*The following code is specifically written for responsive design*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 28px;
+    width: 265px;
+    text-align: center;
+  }
+
+  .game {
+    padding-top: 80px;
+    padding-bottom: 10px;
+  }
+
+  .move-icon {
+    height: 40px;
+  }
+
+  .move-button {
+    width: 80px;
+    height: 80px;
+  }
+
+  .result {
+    font-size: 28px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .moves {
+    font-size: 20px;
+  }
+
+  .score {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .score-wins,
+  .score-losses {
+    margin-bottom: 5px;
+  }
+
+  .reset-score-button,
+  .auto-play-button {
+    font-size: 18px;
+    padding: 3px 6px;
+  }
+
+  .reset-score-warning {
+    font-size: 18px;
+  }
+
+  .yes-reset-button,
+  .no-reset-button {
+    padding: 4px 8px;
+    font-size: 16px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600.02px) and (max-width: 768px) {
+  .title {
+    font-size: 40px;
+    width: 385px;
+    text-align: center;
+  }
+
+  .game {
+    padding-top: 100px;
+    padding-bottom: 15px;
+  }
+
+  .move-icon {
+    height: 75px;
+  }
+
+  .move-button {
+    width: 160px;
+    height: 160px;
+  }
+
+  .result {
+    font-size: 36px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .moves {
+    font-size: 30px;
+  }
+
+  .score {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 13px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .score-wins,
+  .score-losses {
+    margin-bottom: 5px;
+  }
+
+  .reset-score-button,
+  .auto-play-button {
+    font-size: 26px;
+    padding: 8px 16px;
+  }
+
+  .reset-score-warning {
+    font-size: 26px;
+    margin-top: 15px;
+  }
+
+  .yes-reset-button,
+  .no-reset-button {
+    padding: 6px 12px;
+    font-size: 24px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768.02px) and (max-width: 992px) {
+  .title {
+    font-size: 54px;
+    width: 510px;
+    text-align: center;
+  }
+
+  .game {
+    padding-top: 130px;
+    padding-bottom: 15px;
+  }
+
+  .move-icon {
+    height: 110px;
+  }
+
+  .move-button {
+    width: 220px;
+    height: 220px;
+  }
+
+  .result {
+    font-size: 50px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .moves {
+    font-size: 40px;
+  }
+
+  .score {
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 18px;
+  }
+
+  .score-wins,
+  .score-losses {
+    margin-bottom: 5px;
+  }
+
+  .action-buttons-container {
+    column-gap: 16px;
+  }
+
+  .reset-score-button,
+  .auto-play-button {
+    font-size: 36px;
+    padding: 9px 18px;
+  }
+
+  .reset-score-warning {
+    font-size: 36px;
+    margin-top: 15px;
+  }
+
+  .yes-reset-button,
+  .no-reset-button {
+    padding: 7px 14px;
+    font-size: 34px;
+  }
+
+  .no-reset-button {
+    margin-left: 8px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992.02px) and (max-width: 1200px) {
+  .title {
+    font-size: 62px;
+    width: 640px;
+    text-align: center;
+  }
+
+  .game {
+    padding-top: 130px;
+    padding-bottom: 15px;
+  }
+
+  .move-icon {
+    height: 140px;
+  }
+
+  .move-button {
+    width: 280px;
+    height: 280px;
+  }
+
+  .result {
+    font-size: 52px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .moves {
+    font-size: 48px;
+  }
+
+  .score {
+    font-size: 48px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 18px;
+  }
+
+  .score-wins,
+  .score-losses {
+    margin-bottom: 5px;
+  }
+
+  .action-buttons-container {
+    column-gap: 16px;
+  }
+
+  .reset-score-button,
+  .auto-play-button {
+    font-size: 44px;
+    padding: 9px 18px;
+  }
+
+  .reset-score-warning {
+    font-size: 44px;
+    margin-top: 15px;
+  }
+
+  .yes-reset-button,
+  .no-reset-button {
+    padding: 7px 14px;
+    font-size: 42px;
+  }
+
+  .no-reset-button {
+    margin-left: 8px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200.02px) and (max-width: 1920px) {
+  .title {
+    font-size: 62px;
+    width: 640px;
+    text-align: center;
+  }
+
+  .game {
+    padding-top: 130px;
+    padding-bottom: 15px;
+  }
+
+  .move-icon {
+    height: 140px;
+  }
+
+  .move-button {
+    width: 280px;
+    height: 280px;
+  }
+
+  .result {
+    font-size: 52px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .moves {
+    font-size: 48px;
+  }
+
+  .score {
+    font-size: 48px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 18px;
+  }
+
+  .score-wins,
+  .score-losses {
+    margin-bottom: 5px;
+  }
+
+  .action-buttons-container {
+    column-gap: 16px;
+  }
+
+  .reset-score-button,
+  .auto-play-button {
+    font-size: 44px;
+    padding: 9px 18px;
+  }
+
+  .reset-score-warning {
+    font-size: 44px;
+    margin-top: 15px;
+  }
+
+  .yes-reset-button,
+  .no-reset-button {
+    padding: 7px 14px;
+    font-size: 42px;
+  }
+
+  .no-reset-button {
+    margin-left: 8px;
+  }
 }

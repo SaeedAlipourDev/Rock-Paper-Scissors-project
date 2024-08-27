@@ -181,7 +181,11 @@ document.querySelector('.js-reset-score-button')
 
 function updateScoreElement() {
   document.querySelector('.js-score')
-    .innerHTML = `Wins : ${score.wins} <span>&#124;</span> Losses : ${score.losses} <span>&#124;</span> Ties : ${score.ties}`;
+    .innerHTML = `
+      <div class="score-wins"><span>&#124;</span> Wins : ${score.wins}&nbsp;</div>
+      <div class="score-losses"><span>&#124;</span> Losses : ${score.losses}&nbsp;</div>
+      <div class="score-ties"><span>&#124;</span> Ties : ${score.ties}</div>  
+    `;
 }
 
 function pickComputerMove() {
