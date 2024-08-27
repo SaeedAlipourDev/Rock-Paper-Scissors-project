@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rock Paper Scissors</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="android-chrome-icon" type="image/png" sizes="192x192" href="/images/favicon/android-chrome-192x192.png">
+    <link rel="android-chrome-icon" type="image/png" sizes="512x512" href="/images/favicon/android-chrome-512x512.png">
+    <link rel="favicon" type="image/x-icon" href="/images/favicon/favicon.ico">
+    <link rel="manifest" href="/images/favicon/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/rock-paper-scissors.css">
+  </head>
+
+  <body>
+    <h1 class="title">
+      <span>R</span>ock <span>P</span>aper <span>S</span>cissors
+    </h1>
+    <section class="game">
+      <div class="moves-container">
+        <button class="move-button js-rock-button">
+          <img src="images/rock-emoji.png" class="move-icon">
+        </button>
+    
+        <button class="move-button js-paper-button">
+          <img src="images/paper-emoji.png" class="move-icon">
+        </button>
+    
+        <button class="move-button js-scissors-button">
+          <img src="images/scissors-emoji.png" class="move-icon">
+        </button>  
+      </div>
+      <p class="js-result result"></p>
+      <p class="js-moves moves"></p>
+      <p class="js-score score"></p>
+  
+      <div class="action-buttons-container">
+        <button class="reset-score-button js-reset-score-button">
+          Reset Score
+        </button>
+    
+        <button class="auto-play-button">
+          Auto Play
+        </button>
+      </div>
+  
+      <div class="reset-score-warning"></div>
+    </section>
+    
+    <script src="scripts/rock-paper-scissors.js"></script>
+  </body>
+</html>
