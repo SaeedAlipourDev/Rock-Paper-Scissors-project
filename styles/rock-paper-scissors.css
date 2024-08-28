@@ -24,10 +24,6 @@ body {
   border-bottom: 3px solid white;
   border-radius: 10px;
   position: absolute;
-  /*
-  left: 50%;
-  transform: translateX(-50%);
-  */
 }
 
 .title {
@@ -152,7 +148,7 @@ body {
 
 .warning-message {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .yes-reset-button,
@@ -162,7 +158,7 @@ body {
   border: 2px solid white;
   border-radius: 5px;
   padding: 5px 10px;
-  margin-right: 5px;
+  margin-right: 10px;
   cursor: pointer;
   font-family: Roboto;
   font-weight: 500;
@@ -239,6 +235,7 @@ body {
 
   .reset-score-warning {
     font-size: 18px;
+    width: 280px;
   }
 
   .yes-reset-button,
@@ -303,6 +300,7 @@ body {
   .reset-score-warning {
     font-size: 26px;
     margin-top: 15px;
+    width: 400px;
   }
 
   .yes-reset-button,
@@ -369,6 +367,7 @@ body {
   .reset-score-warning {
     font-size: 36px;
     margin-top: 15px;
+    width: 550px;
   }
 
   .yes-reset-button,
@@ -450,6 +449,8 @@ body {
     font-size: 60px;
     margin-top: 40px;
     border-radius: 15px;
+    width: 850px;
+    padding: 15px 25px;
   }
 
   .yes-reset-button,
@@ -533,6 +534,8 @@ body {
     font-size: 60px;
     margin-top: 40px;
     border-radius: 15px;
+    width: 900px;
+    padding: 25px 35px;
   }
 
   .yes-reset-button,
